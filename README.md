@@ -17,6 +17,7 @@ Set up a virtual env for it and activate it:
 
     python -m venv venv
     source venv/bin/activate
+    pip install -r requirements.txt
 
 ## Usage
 
