@@ -11,14 +11,13 @@ create [here](https://www.reddit.com/prefs/apps/).
 
 Clone the repository:
 
-    `git clone https://github.com/schwarz/reddit-vip-flairs.git`
+    git clone https://github.com/schwarz/reddit-vip-flairs.git
 
 Set up a virtual env for it and activate it:
 
-    ```
     python -m venv venv
     source venv/bin/activate
-    ```
+    pip install -r requirements.txt
 
 ## Usage
 
@@ -26,7 +25,7 @@ Adjust the necessary environment variables, you can find all in `.env.example`.
 Rename this file to `.env` to make reddit-vip-flairs load the variables in it.
 Finally, run the script:
 
-    `python main.py`
+    python main.py
 
 ## License
 
