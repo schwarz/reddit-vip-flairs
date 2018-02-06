@@ -8,10 +8,9 @@ import praw
 import os
 
 def main():
+    logging.basicConfig(format='{asctime} - {name} - [{levelname}] {message}', style='{')
     log = logging.getLogger(__name__)
     log.setLevel(logging.INFO)
-    formatter = logging.Formatter('{asctime} - {name} - [{levelname:8s}] {message}', style='{')
-    log.setFormatter(formatter)
     load_dotenv(find_dotenv())
     client_id = os.getenv('VIP_CLIENT_ID')
     client_secret = os.getenv('VIP_CLIENT_SECRET')
