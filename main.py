@@ -26,7 +26,7 @@ def main():
 
     for comment in reddit.subreddit(subreddit).stream.comments():
         submission = comment.submission
-        if (submission.author in vips and
+        if (comment.author in vips and
            (not submission.link_flair_text or flair_text not in submission.link_flair_text)):
             log.debug('found comment {} by u/{} on {}'.format(comment.id, comment.author, submission.id))
             new_text = flair_text
